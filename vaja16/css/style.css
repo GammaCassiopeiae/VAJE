@@ -1,0 +1,27 @@
+body {
+    padding:20px;
+    font-family: sans-serif;
+}
+
+/* place styles here *body {
+    padding:20px;
+    font-family: sans-serif;
+}
+
+/* place styles here */
+
+th {
+    border: 1px solid #aaa;
+    background-color: gold;
+    border-spacing: 20px;
+
+}
+
+td {
+    border: 1px solid #aaa;
+    border-spacing: 20px;
+}
+
+.tab {
+
+}
