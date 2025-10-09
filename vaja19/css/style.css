@@ -1,0 +1,11 @@
+.cat {
+    width: 600px;
+    height: 400px;
+    
+}
+div {
+    width: 600px;
+    margin: auto;
+    display: block;
+    background-image: url(../images/cat.jpeg);
+}
