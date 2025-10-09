@@ -1,0 +1,84 @@
+body {
+    background: #3F1D2B url(../images/prague-streets-at-night-colorful-abstract-edit-picjumbo-com.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin:0;
+    padding:0;
+}
+/* Tukaj sem spreminjal :
+width: 680px,
+maximum width (max-width property): 90%,
+++distance of the text from the edge of the container: 50px,
+background color: rgba(255, 255, 255, 0.95),
+font size: 15px,
+the size of the line spacing: 1.5em,
+text color: rgba(0, 0, 0, 0.6).
+Another step will be the appearance of h1 and h2 headings.
+
+Set them common text color: #b4411e.
+Then give them the following style:
+font size:
+h1: 38px
+h2: 32px
+the size of the line spacing:
+h1: 1.2em
+h2: 1em
+Move on to the gallery now. There are links with pictures in it, i.e. .
+gallery a elements.
+Style them in the following way:
+max-width: 50%,
+padding: 3px.
+Even when you set 50% width for the links, the pictures still don't fit in these links. 
+This is because img graphics are displayed in their original size by default. 
+Fix this.
+For .gallery img elements, add the style:
+maximum width (max-width) of 100%
+*/
+.container {
+    width: 680px;
+    max-width: 90%;
+    padding: 50px; /*  ++ distance of the text from the edge of the container: 50px,*/
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.95);
+    font-size: 15px;
+    line-height: 1.5em;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0 auto;
+    font-family: sans-serif;
+    box-shadow: 0 0 30px rgba(0,0,0,1);
+    
+
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+h1{
+    font-size: 38px;
+    line-height: 1.2em;
+}
+h2{
+    font-size: 32px;
+    line-height: 1em;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery a {
+    box-sizing: border-box;
+    max-width: 50%;
+    padding: 3px;
+}
+.gallery img {
+    display: block;
+    transition: 0.5s;
+    filter: grayscale(0.5);
+    max-width: 100%;
+    
+}
+.gallery img:hover {
+    filter: grayscale(0);
+}
